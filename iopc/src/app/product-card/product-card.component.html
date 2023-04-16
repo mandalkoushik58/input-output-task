@@ -1,0 +1,13 @@
+<div class="card mb-4" >
+  <div class="card-header" [ngClass]="{
+    'bg-primary':getProduct.pcategory==='catlog',
+    'bg-success':getProduct.pcategory==='product'
+  }">
+    <h3>
+      {{getProduct.productName}}
+    </h3>
+  </div>
+  <div class="card-body">
+    {{getProduct.pdescription}}
+  </div>
+</div>
